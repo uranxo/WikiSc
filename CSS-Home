@@ -1,4 +1,17 @@
 h1 {
 font-size:80;
 color:#faeeb1;
+font-family:cursive;
+}
+
+h6 {
+font-size:17;
+color:#A0FFF6;
+font-family:cursive;
+}
+
+button {
+height:70;
+width:220;
+background-color:#6ca390;
 }
