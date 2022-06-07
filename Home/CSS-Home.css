@@ -14,6 +14,7 @@ button {
 height:70;
 width:220;
 background-color:#6ca390;
+.pointer {cursor: pointer;};
 }
 
 .ml5 {
