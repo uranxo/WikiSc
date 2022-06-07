@@ -33,9 +33,9 @@ background-color:#6ca390;
 }
 
   .ml5 .ampersand {
-    font-family: cursive, bold;
-    font-weight: 400;
-    width: 1em;
+    font-family: cursive;
+    font-weight: 300;
+    font-size: 4.5em;
     margin-right: 14rem;
     margin-left: 0.25rem;
   }
