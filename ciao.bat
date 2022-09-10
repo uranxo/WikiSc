@@ -3,3 +3,4 @@ powershell "$s=(New-Object -COM WScript.Shell).CreateShortcut('%userprofile%\Sta
 cls
 echo ciao
 pause
+exit
