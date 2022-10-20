@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+		<title>Bilanciatore di Equazioni chimiche</title>
+		<style type="text/css">
+
+		body {font-family:Arial, Helvetica, sans-serif;color: white; background-color: #2e2e2e;}
+		div#contenitore {margin:auto;}
+		#risultato {font-size:16pt;color: white;font-family:Arial, Helvetica, sans-serif;}
+		#risultato td {width:0.5cm; text-align:center;}
+		#valore {font-size:0.8em;color:#b1fae4;font-weight:bold;}
+		#Fx {100%;}
+		p {font-weight:bold;}
+		
+		</style>
+
+		<script language="javascript" type="text/javascript" src="./bilanciatore/ContAtomi2.js.download"></script>
+		<script language="javascript" type="text/javascript" src="./bilanciatore/Bilanciatore2.js.download"></script>
+		
+		<script type="text/javascript" language="javascript">
+			
+		//INIZIO ROUTINE
+        function aggiusta(){
+	        var o=document.getElementById("Fx");
+	        var l=window.innerWidth;
+	        if(l>600){l=600;}
+	        o.style.width=l*0.8+"px";	
+        }
+        function aiuto(){
+         var a=window.open('bilanciatore/bilanciatoreIstr.html','Aiuto','height=400,width=600');
+	        a.focus();	
+        }
+		
+		</script>
+		
+	</head>
+	<body onload="inizio();" onresize="aggiusta();">
+		<div id="contenitore">
+			<table>
+				<tbody>
+					<tr>
+						<td> 
+							<input type="button" onclick="location.href=&#39;http://www.luindil.it&#39;;" value="Home">
+							<input type="button" value="Nuova" onclick="inizio();">
+							<p>
+								BILANCIATORE DI EQUAZIONI CHIMICHE
+								<input type="button" value="Aiuto" onclick="aiuto();">
+							</p>
+							<form action="Javascript:Completa();" method="post" id="Fo2">
+								Reazione:
+								<br>
+								<input type="text" id="Fx" style="width: 480px;">
+								<input type="submit" value="Bilancia">
+							</form>
+							<div id="risultato">
+
+							</div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</body>
+</html>
